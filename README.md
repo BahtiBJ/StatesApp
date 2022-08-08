@@ -8,4 +8,5 @@ where the first line is taken as the title of the article. If the article or sec
 
 Navigation is implemented by Android Jetpack Navigation and Navigation Drawer.
 
-![](https://github.com/BahtiBJ/StatesApp/tree/master/illustration/states_preview_1.gif)  ![](https://github.com/BahtiBJ/StatesApp/tree/master/illustration/states_preview_2.gif) 
+![](https://github.com/BahtiBJ/StatesApp/tree/master/illustration/states_preview_1.gif)  
+![](https://github.com/BahtiBJ/StatesApp/tree/master/illustration/states_preview_2.gif) 
