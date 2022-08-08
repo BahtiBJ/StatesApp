@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listOfContentFragment1">
+
+    <fragment
+        android:id="@+id/listOfContentFragment1"
+        android:name="com.template.JK_0089_guide_v1.ListOfContentFragment"
+        android:label="ListOfContentFragment1" >
+        <action
+            android:id="@+id/action_listOfContentFragment_to_listOfContentFragment22"
+            app:destination="@id/listOfContentFragment2"
+            app:enterAnim="@anim/enter_slide_left"
+            app:exitAnim="@anim/exit_slide_left"
+            app:popEnterAnim="@anim/pop_up_enter_slide_right"
+            app:popExitAnim="@anim/pop_up_exit_slide_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listOfContentFragment2"
+        android:name="com.template.JK_0089_guide_v1.ListOfContentFragment"
+        android:label="ListOfContentFragment2" >
+        <action
+            android:id="@+id/action_listOfContentFragment2_to_articleFragment2"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/enter_slide_left"
+            app:exitAnim="@anim/exit_scale_desc"
+            app:popEnterAnim="@anim/enter_scale_incr"
+            app:popExitAnim="@anim/pop_up_exit_slide_right"/>
+        <action
+            android:id="@+id/action_listOfContentFragment2_self2"
+            app:destination="@id/listOfContentFragment2"
+            app:popUpTo="@id/listOfContentFragment2"
+            app:popUpToInclusive="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.template.JK_0089_guide_v1.ArticleFragment"
+        android:label="ArticleFragment" >
+        <action
+            android:id="@+id/action_to_start"
+            app:popUpTo="@id/listOfContentFragment1"
+            app:popUpToInclusive="true"
+            app:destination="@id/listOfContentFragment1"
+            app:enterAnim="@anim/enter_slide_up"/>
+        <action
+            android:id="@+id/action_articleFragment_to_listOfContentFragment22"
+            app:popUpTo="@id/listOfContentFragment1"
+            app:popUpToInclusive="true"
+            app:destination="@id/listOfContentFragment2" />
+    </fragment>
+
+
+</navigation>
