@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/listOfContentFragment1"
-        android:name="com.template.JK_0089_guide_v1.ListOfContentFragment"
+        android:name="com.bbj.StatesApp.ListOfContentFragment"
         android:label="ListOfContentFragment1" >
         <action
             android:id="@+id/action_listOfContentFragment_to_listOfContentFragment22"
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/listOfContentFragment2"
-        android:name="com.template.JK_0089_guide_v1.ListOfContentFragment"
+        android:name="com.bbj.StatesApp.ListOfContentFragment"
         android:label="ListOfContentFragment2" >
         <action
             android:id="@+id/action_listOfContentFragment2_to_articleFragment2"
@@ -37,7 +37,7 @@
 
     <fragment
         android:id="@+id/articleFragment"
-        android:name="com.template.JK_0089_guide_v1.ArticleFragment"
+        android:name="com.bbj.StatesApp.ArticleFragment"
         android:label="ArticleFragment" >
         <action
             android:id="@+id/action_to_start"
